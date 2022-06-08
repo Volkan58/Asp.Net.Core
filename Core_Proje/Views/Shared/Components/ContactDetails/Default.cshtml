@@ -1,0 +1,37 @@
+﻿@using EntityLayer.Concrete
+@model List<Contact>
+<div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+
+    @foreach (var x in Model)
+    {
+
+        <div class="mt-3 px-1">
+            <div class="h5">@x.Title</div>
+            <p>@x.Description </p>
+            <p>Aşağıdaki Adresler Üzerinden Bana Mail Gönderebilir veya Sorularınızı İletebilirsiniz.</p>
+            <p>Görüşmek Üzere.</p>
+        </div>
+        <div class="mt-53 px-1">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="pb-1">Email:</div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="pb-1 fw-bolder">@x.Mail</div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="pb-1">Github</div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="pb-1 fw-bolder">Volkan Şen</div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="pb-1">Phone:</div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="pb-1 fw-bolder">@x.Phone</div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

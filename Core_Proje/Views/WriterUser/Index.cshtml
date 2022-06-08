@@ -1,0 +1,56 @@
+﻿@using EntityLayer.Concrete
+@model List<WriterUser>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+@*//Ajax üzerinden Veri Getirme İşlemi*@
+<div class="coll-md-6">
+
+    <div class="p-2">
+
+        <button type="button" id="btngetlistall" class="btn btn-primary">Verileri Getir.</button>
+        <button type="button" id="btnAdduser" class="btn btn-info">Kaydet</button>
+    </div>
+</div>
+
+<h4 class="text-center"> Yazar Listesi</h4>
+<div class="p-2" id="ListUser">
+
+    Buraya Veriler Gelecek.
+
+</div>
+
+<br />
+
+<div class="col-md-12">
+    <input type="text" class="form-control" id="İnpname"  placeholder="Ad"/><br />
+    <input type="text" class="form-control" id="İnpsurname"  placeholder="Soyad"/><br />
+    <input type="text" class="form-control" id="İnpusername"  placeholder="Kullanıcı Adınız"/><br />
+    <input type="text" class="form-control" id="İnpmail"  placeholder="Mail Adresi"/><br />
+
+
+
+
+</div>
+
+@section Scripts
+{
+<script>
+    $("#getlistall").click(function(){
+        $.ajax({
+            contentType: "application/json",
+            dataType: "json",
+            type: "Get",
+            url: "/WriterUser/ListUser/",
+            success: function (funk) {
+                let users = jQuery.parseJSON(funk);
+                console.log(users);
+            }
+        });
+    });
+</script>
+}
+<script src="~/lib/jquery/dist/jquery.js"></script>
