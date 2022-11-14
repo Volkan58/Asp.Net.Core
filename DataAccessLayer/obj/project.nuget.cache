@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fnL3isNIzbflMaQosTaiUt36P+PjYl5vGeJ7dOHJ6mE5wBFI+kxhgco4X0ixXmu+wyKgTjTXjtQYDl/xuGP7uQ==",
+  "dgSpecHash": "LMBwiCyw9grG+mtMXn7DzCFWOthiSWiMKU8Qwyalz2IFoQ3qc8BF2wy5Cke7M+QZRAQnOB2bih5JhwtIk5JP3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Volka\\OneDrive\\Masaüstü\\AspNetCore\\Core_Proje\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\Volka\\Asp.Net.Core\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Volka\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Volka\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
